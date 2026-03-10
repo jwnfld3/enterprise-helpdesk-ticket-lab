@@ -1,4 +1,10 @@
 # Ticket 002 – New Employee Account Provisioning
+**Ticket ID:** HD-002  
+**Priority:** Low  
+**Category:** User Account Provisioning  
+**Status:** Resolved  
+**Assigned Team:** IT Support  
+**Created Date:** 2026-03-10
 
 ## Issue Summary
 The Human Resources department submitted a request to create system access for a newly hired employee. The employee required access to Microsoft 365 services and domain resources.
