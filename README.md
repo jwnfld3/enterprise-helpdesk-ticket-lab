@@ -31,24 +31,36 @@ Incident documentation
 
 ---
 
-## Ticket Scenarios
+## Ticket Dashboard
 
-The following support scenarios are documented in this repository.
+The following support scenarios simulate common help desk tickets handled in enterprise environments.
 
-### Ticket 001 – User Unable to Sign In to Microsoft 365
-User cannot access Outlook or SharePoint due to licensing misconfiguration.
+| Ticket ID | Issue | Technology | Status |
+|-----------|------|------------|--------|
+| Ticket 001 | Microsoft 365 Login Failure | Microsoft 365, Entra ID | Completed |
+| Ticket 002 | New Employee Account Provisioning | Active Directory, Microsoft 365 | Planned |
+| Ticket 003 | Department Printer Not Responding | Windows Server Print Services | Planned |
+| Ticket 004 | Intune Device Non-Compliant | Microsoft Intune | Planned |
+| Ticket 005 | Suspicious Login Alert | Microsoft Entra ID | Planned |
 
-### Ticket 002 – New Employee Account Provisioning
-Creation of a new employee account in Active Directory and Microsoft 365 including license assignment and group membership.
+---
 
-### Ticket 003 – Department Printer Not Responding
-Multiple users unable to print due to print spooler service failure.
+## Ticket Documentation
 
-### Ticket 004 – Intune Device Non-Compliant
-Workstation flagged as non-compliant due to missing security updates.
+Ticket 001 – Microsoft 365 Login Issue  
+tickets/ticket-001-m365-login.md
 
-### Ticket 005 – Suspicious Login Alert
-Authentication alert triggered due to unusual sign-in activity detected in Microsoft Entra ID.
+Ticket 002 – New Employee Account Provisioning  
+tickets/ticket-002-user-onboarding.md
+
+Ticket 003 – Network Printer Troubleshooting  
+tickets/ticket-003-printer-issue.md
+
+Ticket 004 – Intune Device Compliance Investigation  
+tickets/ticket-004-intune-compliance.md
+
+Ticket 005 – Suspicious Login Investigation  
+tickets/ticket-005-security-alert.md
 
 ---
 
