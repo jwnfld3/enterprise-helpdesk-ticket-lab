@@ -2,7 +2,7 @@
 
 This project simulates common enterprise IT support scenarios encountered in help desk environments. Each ticket documents a realistic troubleshooting workflow including issue identification, investigation steps, resolution, and lessons learned.
 
-The purpose of this lab is to demonstrate how IT support professionals diagnose and resolve issues across infrastructure, cloud services, identity management, and endpoint management systems.
+The purpose of these labs is to demonstrate how IT support professionals diagnose and resolve issues across infrastructure, cloud services, identity management, and endpoint management systems.
 
 ---
 
