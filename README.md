@@ -1,3 +1,4 @@
+This repository simulates enterprise help desk incidents using documentation practices similar to IT service management platforms such as ServiceNow, Jira Service Management, and HaloITSM.
 # Enterprise Help Desk Ticket Resolution Lab
 
 This project simulates common enterprise IT support scenarios encountered in help desk environments. Each ticket documents a realistic troubleshooting workflow including issue identification, investigation steps, resolution, and lessons learned.
