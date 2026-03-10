@@ -31,17 +31,17 @@ Incident documentation
 
 ---
 
-## Ticket Dashboard
+## Help Desk Ticket Dashboard
 
-The following support scenarios simulate common help desk tickets handled in enterprise environments.
+The following tickets simulate common enterprise IT support incidents and service requests.
 
-| Ticket ID | Issue | Technology | Status |
-|-----------|------|------------|--------|
-| Ticket 001 | Microsoft 365 Login Failure | Microsoft 365, Entra ID | Completed |
-| Ticket 002 | New Employee Account Provisioning | Active Directory, Microsoft 365 | Planned |
-| Ticket 003 | Department Printer Not Responding | Windows Server Print Services | Planned |
-| Ticket 004 | Intune Device Non-Compliant | Microsoft Intune | Planned |
-| Ticket 005 | Suspicious Login Alert | Microsoft Entra ID | Planned |
+| Ticket ID | Issue | Category | Priority | Status |
+|-----------|------|----------|----------|--------|
+| [HD-001](tickets/ticket-001-m365-login.md) | Microsoft 365 Login Failure | Identity and Access Management | Medium | Resolved |
+| [HD-002](tickets/ticket-002-user-onboarding.md) | New Employee Account Provisioning | User Account Provisioning | Low | Resolved |
+| [HD-003](tickets/ticket-003-printer-issue.md) | Department Printer Not Responding | Infrastructure / Printing | Medium | Resolved |
+| [HD-004](tickets/ticket-004-intune-compliance.md) | Intune Device Non-Compliant | Endpoint Management | Medium | Resolved |
+| [HD-005](tickets/ticket-005-security-alert.md) | Suspicious Login Alert | Security Incident | High | Resolved |
 
 ---
 
