@@ -1,4 +1,10 @@
 # Ticket 004 – Intune Device Non-Compliant
+**Ticket ID:** HD-004  
+**Priority:** Medium  
+**Category:** Endpoint Management  
+**Status:** Resolved  
+**Assigned Team:** IT Support  
+**Created Date:** 2026-03-10
 
 ## Issue Summary
 A workstation was flagged as non-compliant in Microsoft Intune due to missing required security updates.
