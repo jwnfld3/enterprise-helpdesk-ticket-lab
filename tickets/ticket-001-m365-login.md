@@ -1,5 +1,12 @@
 # Ticket 001 – User Unable to Sign In to Microsoft 365
 
+**Ticket ID:** HD-001  
+**Priority:** Medium  
+**Category:** Identity and Access Management  
+**Status:** Resolved  
+**Assigned Team:** IT Support  
+**Created Date:** 2026-03-10
+
 ## Issue Summary
 A user reported being unable to access Microsoft 365 services including Outlook and SharePoint. The user received an authentication error when attempting to sign in.
 
