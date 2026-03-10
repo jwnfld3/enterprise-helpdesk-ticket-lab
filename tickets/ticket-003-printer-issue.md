@@ -1,4 +1,10 @@
 # Ticket 003 – Department Printer Not Responding
+**Ticket ID:** HD-003  
+**Priority:** Medium  
+**Category:** Infrastructure / Printing  
+**Status:** Resolved  
+**Assigned Team:** IT Support  
+**Created Date:** 2026-03-10
 
 ## Issue Summary
 Multiple users reported that the department network printer was not responding. Print jobs were being sent but were not printing.
