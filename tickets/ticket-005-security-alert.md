@@ -1,4 +1,10 @@
 # Ticket 005 – Suspicious Login Alert
+**Ticket ID:** HD-005  
+**Priority:** High  
+**Category:** Security Incident  
+**Status:** Resolved  
+**Assigned Team:** IT Support  
+**Created Date:** 2026-03-10
 
 ## Issue Summary
 A security alert was generated indicating an unusual sign-in attempt for a user account in Microsoft Entra ID.
