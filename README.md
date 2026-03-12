@@ -54,24 +54,7 @@ The following tickets simulate common enterprise IT support incidents and servic
 | [HD-014](https://github.com/jwnfld3/enterprise-help-desk-ticket-resolution-lab/blob/main/tickets/ticket-014-sharepoint-permission-issue.md) | SharePoint Site Permission Issue | Microsoft 365 / SharePoint | Medium | Resolved |
 | [HD-015](https://github.com/jwnfld3/enterprise-help-desk-ticket-resolution-lab/blob/main/tickets/ticket-015-wifi-authentication-failure.md) | Wireless Network Authentication Failure | Network Connectivity | High | Resolved |
 
----
 
-## Ticket Documentation
-
-Ticket 001 – Microsoft 365 Login Issue  
-tickets/ticket-001-m365-login.md
-
-Ticket 002 – New Employee Account Provisioning  
-tickets/ticket-002-user-onboarding.md
-
-Ticket 003 – Network Printer Troubleshooting  
-tickets/ticket-003-printer-issue.md
-
-Ticket 004 – Intune Device Compliance Investigation  
-tickets/ticket-004-intune-compliance.md
-
-Ticket 005 – Suspicious Login Investigation  
-tickets/ticket-005-security-alert.md
 
 ---
 
