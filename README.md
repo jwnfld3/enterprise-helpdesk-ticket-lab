@@ -39,7 +39,7 @@ The following tickets simulate common enterprise IT support incidents and servic
 | Ticket ID | Issue | Category | Priority | Status |
 |----------|------|----------|----------|--------|
 | [HD-001](https://github.com/jwnfld3/enterprise-helpdesk-ticket-lab/blob/main/tickets/ticket-001-m365-login.md) | Microsoft 365 Login Failure | Identity and Access Management | Medium | Resolved |
-| [HD-002](https://github.com/jwnfld3/enterprise-help-desk-ticket-resolution-lab/blob/main/tickets/ticket-002-account-provisioning.md) | New Employee Account Provisioning | User Account Provisioning | Low | Resolved |
+| [HD-002](https://github.com/jwnfld3/enterprise-helpdesk-ticket-lab/blob/main/tickets/ticket-002-user-onboarding.md) | New Employee Account Provisioning | User Account Provisioning | Low | Resolved |
 | [HD-003](https://github.com/jwnfld3/enterprise-help-desk-ticket-resolution-lab/blob/main/tickets/ticket-003-printer-issue.md) | Department Printer Not Responding | Infrastructure / Printing | Medium | Resolved |
 | [HD-004](https://github.com/jwnfld3/enterprise-help-desk-ticket-resolution-lab/blob/main/tickets/ticket-004-intune-device-compliance.md) | Intune Device Non-Compliant | Endpoint Management | Medium | Resolved |
 | [HD-005](https://github.com/jwnfld3/enterprise-help-desk-ticket-resolution-lab/blob/main/tickets/ticket-005-suspicious-login.md) | Suspicious Login Alert | Security Incident | High | Resolved |
