@@ -1,60 +1,34 @@
-# Ticket 008 – VPN Connection Failure for Remote User
+# Ticket 008 VPN Connection Failure
 
-Ticket ID: HD-008  
-Priority: High  
-Category: Network Access / Remote Connectivity  
+## Ticket Summary
+
+Ticket ID: 008  
+Category: Network Connectivity  
+Platform: VPN  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-13  
 
-## Issue Summary
+## User Reported Issue
 
-A remote employee reported being unable to establish a VPN connection to access internal company resources.
-
-## Environment
-
-Corporate VPN gateway  
-Windows 11 workstation  
-Remote user connection  
+The user reported being unable to connect to the corporate VPN when working remotely.
 
 ## Investigation
 
-### Step 1 – Verify Internet Connectivity
+The VPN client configuration and network connectivity were reviewed.
 
-The user’s local internet connection was verified.
+## Click by Click Learning Process
 
-Result  
-Internet connectivity was functioning normally.
-
-### Step 2 – Verify VPN Client Configuration
-
-VPN client settings were reviewed.
-
-Result  
-Incorrect VPN server address was configured.
-
-### Step 3 – Update VPN Configuration
-
-The correct VPN gateway address was provided and configured.
-
-Result  
-User successfully connected to the VPN.
-
-### Step 4 – Verify Internal Resource Access
-
-User attempted to access internal network resources.
-
-Result  
-Internal systems were accessible.
-
-## Root Cause
-
-Incorrect VPN server address configured in the VPN client.
+1. Opened **VPN Client**.
+2. Verified server address configuration.
+3. Checked user credentials.
+4. Tested internet connectivity.
+5. Restarted the VPN client.
+6. Attempted connection again.
 
 ## Resolution
 
-VPN client configuration was corrected.
+The VPN configuration was corrected and the user successfully connected to the corporate network.
 
-## Lessons Learned
+## Documentation Sources
 
-VPN connectivity issues often occur due to incorrect client configuration settings.
+Microsoft VPN Troubleshooting  
+https://learn.microsoft.com/windows-server/remote/
