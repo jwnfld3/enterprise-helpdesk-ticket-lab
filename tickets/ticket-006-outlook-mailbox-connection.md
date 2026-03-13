@@ -1,61 +1,39 @@
-# Ticket 006 – Outlook Unable to Connect to Mailbox
+# Ticket 006 Outlook Mailbox Connection Issue
 
-Ticket ID: HD-006  
-Priority: Medium  
-Category: Microsoft 365 / Email Services  
+## Ticket Summary
+
+Ticket ID: 006  
+Category: Email Access  
+Platform: Microsoft Outlook  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-11  
+Assigned Team: IT Helpdesk  
 
-## Issue Summary
+## User Reported Issue
 
-A user reported that Microsoft Outlook was unable to connect to their mailbox. The application displayed a message indicating that it could not establish a connection to the Exchange server.
-
-## Environment
-
-Microsoft 365  
-Exchange Online  
-Windows 11 workstation  
-Microsoft Outlook  
+The user reported that Microsoft Outlook could not connect to their mailbox and displayed a connection error.
 
 ## Investigation
 
-### Step 1 – Verify Microsoft 365 Service Status
+The helpdesk team verified the user’s mailbox status and network connectivity.
 
-The Microsoft 365 service health dashboard was reviewed to confirm that Exchange Online services were operational.
+Outlook profile configuration was reviewed.
 
-Result  
-No service outages were reported.
+## Click by Click Learning Process
 
-### Step 2 – Verify User Mailbox Status
-
-The user account was reviewed in Microsoft Entra ID and Exchange Admin Center.
-
-Result  
-Mailbox was active and properly provisioned.
-
-### Step 3 – Test Outlook Profile
-
-The existing Outlook profile was reviewed and tested.
-
-Result  
-Profile appeared corrupted.
-
-### Step 4 – Recreate Outlook Profile
-
-A new Outlook profile was created through the Windows Control Panel mail configuration.
-
-Result  
-Outlook successfully connected to the mailbox.
-
-## Root Cause
-
-The user's Outlook profile was corrupted.
+1. Opened **Control Panel**.
+2. Selected **Mail**.
+3. Opened **Mail Profiles**.
+4. Reviewed the existing Outlook profile.
+5. Selected **Add Profile**.
+6. Entered the user’s email account information.
+7. Configured the mailbox connection.
+8. Launched Outlook with the new profile.
 
 ## Resolution
 
-A new Outlook profile was created and the mailbox connection was restored.
+The Outlook profile was recreated, restoring the mailbox connection.
 
-## Lessons Learned
+## Documentation Sources
 
-When Outlook cannot connect to Exchange Online and services are operational, recreating the Outlook profile should be considered early in the troubleshooting process.
+Microsoft Outlook Profile Troubleshooting  
+https://learn.microsoft.com/outlook/
