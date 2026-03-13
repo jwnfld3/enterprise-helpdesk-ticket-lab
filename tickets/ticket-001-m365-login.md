@@ -1,48 +1,64 @@
-# Ticket 001 – User Unable to Sign In to Microsoft 365
+# Ticket 001 Microsoft 365 Login Issue
 
-**Ticket ID:** HD-001  
-**Priority:** Medium  
-**Category:** Identity and Access Management  
-**Status:** Resolved  
-**Assigned Team:** IT Support  
-**Created Date:** 2026-03-10
+## Ticket Summary
 
-## Issue Summary
-A user reported being unable to access Microsoft 365 services including Outlook and SharePoint. The user received an authentication error when attempting to sign in.
+Ticket ID: 001  
+Category: Authentication Issue  
+Platform: Microsoft 365  
+Status: Resolved  
+Assigned Team: IT Helpdesk
 
-## Environment
-Microsoft 365  
-Microsoft Entra ID  
-Windows 11 workstation  
+## User Reported Issue
+
+The user reported that they were unable to sign in to their Microsoft 365 account. The login attempt resulted in an authentication failure message.
+
+The issue prevented the user from accessing Microsoft Outlook, Microsoft Teams, and other Microsoft 365 services.
 
 ## Investigation
 
-### Step 1 – Verify User Account Status
-The user account was reviewed in Microsoft Entra ID to confirm that the account was active.
+The helpdesk team began the investigation by reviewing authentication activity associated with the user account.
 
-Result  
-Account was active.
+Microsoft Entra ID sign-in logs were used to analyze login attempts, authentication methods, and error messages associated with the failed login events.
 
-### Step 2 – Check License Assignment
-The user's Microsoft 365 license assignment was reviewed.
+During the investigation, the following information was reviewed:
 
-Result  
-No license assigned to the user account.
+- user account sign-in activity
+- authentication results
+- source IP addresses
+- login timestamps
+- potential error codes
 
-### Step 3 – Assign License
-The correct Microsoft 365 license was assigned.
+The investigation determined that the login failure was caused by an expired password.
 
-### Step 4 – Test Login
-User attempted to sign in again.
+## Click by Click Learning Process
 
-Result  
-Login successful.
-
-## Root Cause
-User account did not have a Microsoft 365 license assigned.
+1. Signed in to the Microsoft 365 Admin Center.
+2. Navigated to **Admin Centers**.
+3. Selected **Microsoft Entra ID**.
+4. Opened **Identity**.
+5. Selected **Monitoring**.
+6. Clicked **Sign-in Logs**.
+7. Searched for the affected user account.
+8. Reviewed authentication attempts and error messages.
+9. Identified the authentication failure reason.
+10. Verified the account status and password expiration.
 
 ## Resolution
-Assigned Microsoft 365 license and verified successful login.
 
-## Lessons Learned
-When users cannot access Microsoft 365 services, license assignment should be verified early in troubleshooting.
+The helpdesk administrator reset the user's password using the Microsoft Entra Admin Center.
+
+Steps taken:
+
+- reset the user password
+- provided the temporary password to the user
+- required the user to set a new password at next login
+
+After resetting the password, the user successfully authenticated and regained access to Microsoft 365 services.
+
+## Documentation Sources
+
+Microsoft Entra Sign-in Logs  
+https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins
+
+Troubleshoot Microsoft Entra Sign-in Errors  
+https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-troubleshoot-sign-in-errors
