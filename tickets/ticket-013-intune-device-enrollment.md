@@ -1,60 +1,36 @@
-# Ticket 013 – Device Enrollment Failure in Intune
+# Ticket 013 Intune Device Enrollment
 
-Ticket ID: HD-013  
-Priority: Medium  
-Category: Endpoint Management  
+## Ticket Summary
+
+Ticket ID: 013  
+Category: Device Management  
+Platform: Microsoft Intune  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-18  
+Assigned Team: IT Helpdesk  
 
-## Issue Summary
+## User Reported Issue
 
-A newly issued workstation failed to enroll in Microsoft Intune during device setup.
-
-## Environment
-
-Microsoft Intune  
-Microsoft Entra ID  
-Windows 11 workstation  
+A new device needed to be enrolled in Microsoft Intune for device management and compliance enforcement.
 
 ## Investigation
 
-### Step 1 – Verify Device Registration
+The helpdesk team confirmed that the device met enrollment requirements and that the user had the appropriate license assigned.
 
-Device registration status was reviewed in Microsoft Entra ID.
+## Click by Click Learning Process
 
-Result  
-Device was not registered.
-
-### Step 2 – Verify Intune Licensing
-
-User license was reviewed.
-
-Result  
-Intune service was included in the license.
-
-### Step 3 – Reinitiate Device Enrollment
-
-Device enrollment process was restarted using company credentials.
-
-Result  
-Device successfully registered.
-
-### Step 4 – Confirm Policy Deployment
-
-Endpoint policies were reviewed.
-
-Result  
-Device compliance policies applied successfully.
-
-## Root Cause
-
-Initial device enrollment process was interrupted during setup.
+1. Opened **Settings** on the device.
+2. Navigated to **Accounts**.
+3. Selected **Access work or school**.
+4. Clicked **Connect**.
+5. Entered the user’s corporate credentials.
+6. Followed the device enrollment prompts.
+7. Completed the device registration process.
 
 ## Resolution
 
-Device enrollment was restarted and completed successfully.
+The device was successfully enrolled in Microsoft Intune and compliance policies were applied.
 
-## Lessons Learned
+## Documentation Sources
 
-Enrollment failures can occur if device setup is interrupted during initial configuration.
+Microsoft Intune Device Enrollment  
+https://learn.microsoft.com/mem/intune/enrollment/
