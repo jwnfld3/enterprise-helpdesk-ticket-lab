@@ -1,54 +1,48 @@
-# Ticket 009 – Microsoft Teams Sign-In Failure
+# Ticket 009 Microsoft Teams Sign-in Failure
 
-Ticket ID: HD-009  
-Priority: Medium  
-Category: Microsoft 365 / Collaboration  
+## Ticket Summary
+
+Ticket ID: 009  
+Category: Authentication Issue  
+Platform: Microsoft Teams  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-14  
+Assigned Team: IT Helpdesk  
 
-## Issue Summary
+## User Reported Issue
 
-A user reported being unable to sign into Microsoft Teams despite having a valid Microsoft 365 account.
+The user reported that they were unable to sign in to Microsoft Teams. The application displayed an authentication error and repeatedly prompted the user to enter credentials.
 
-## Environment
-
-Microsoft 365  
-Microsoft Teams  
-Windows 11 workstation  
-Microsoft Entra ID  
+The issue prevented the user from participating in meetings and accessing team collaboration channels.
 
 ## Investigation
 
-### Step 1 – Verify Account Authentication
+The helpdesk team reviewed the user’s authentication activity and verified that the account was active in Microsoft Entra.
 
-User credentials were tested in Microsoft 365.
+Sign-in logs were examined to determine whether authentication failures were occurring during the login process.
 
-Result  
-User successfully authenticated to other services.
+The investigation determined that cached credentials in the Teams application were causing the authentication failure.
 
-### Step 2 – Review Microsoft Teams License
+## Click by Click Learning Process
 
-License assignments were reviewed in Microsoft 365 admin center.
+1. Closed the Microsoft Teams application.
+2. Opened **File Explorer**.
+3. Navigated to the following directory:
 
-Result  
-Microsoft Teams service was not enabled for the license.
+   ```
+   C:\Users\username\AppData\Roaming\Microsoft\Teams
+   ```
 
-### Step 3 – Enable Teams Service
-
-Teams service was enabled under the assigned Microsoft 365 license.
-
-Result  
-User successfully signed into Teams.
-
-## Root Cause
-
-Microsoft Teams service was disabled in the user's license configuration.
+4. Deleted the Teams cache folders.
+5. Restarted the computer.
+6. Reopened Microsoft Teams.
+7. Entered the user’s credentials.
+8. Completed the authentication process.
 
 ## Resolution
 
-Teams service was enabled within the Microsoft 365 license settings.
+The Teams application cache was cleared and the user successfully signed in after restarting the application.
 
-## Lessons Learned
+## Documentation Sources
 
-Microsoft 365 license services should be verified when application sign-in issues occur.
+Microsoft Teams Sign-in Troubleshooting  
+https://learn.microsoft.com/microsoftteams/troubleshoot/
