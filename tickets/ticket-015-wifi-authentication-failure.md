@@ -1,57 +1,36 @@
-# Ticket 015 – Wireless Network Authentication Failure
+# Ticket 015 WiFi Authentication Failure
 
-Ticket ID: HD-015  
-Priority: High  
+## Ticket Summary
+
+Ticket ID: 015  
 Category: Network Connectivity  
+Platform: Corporate WiFi  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-20  
+Assigned Team: IT Helpdesk  
 
-## Issue Summary
+## User Reported Issue
 
-A user reported being unable to connect to the corporate wireless network.
-
-## Environment
-
-Corporate wireless network  
-Windows 11 workstation  
-Active Directory authentication  
+The user reported being unable to connect to the corporate WiFi network. The device repeatedly failed during authentication.
 
 ## Investigation
 
-### Step 1 – Verify Wireless Signal
+The helpdesk team reviewed wireless network configuration and verified the user credentials used for authentication.
 
-Wireless connectivity and signal strength were verified.
+## Click by Click Learning Process
 
-Result  
-Signal strength was normal.
-
-### Step 2 – Verify User Authentication
-
-Authentication logs were reviewed.
-
-Result  
-Authentication attempts were failing.
-
-### Step 3 – Reset Wireless Profile
-
-Existing wireless network profile was removed and recreated.
-
-### Step 4 – Test Wireless Connection
-
-User attempted to reconnect.
-
-Result  
-Connection successful.
-
-## Root Cause
-
-Corrupted wireless network profile on the workstation.
+1. Opened **Network Settings**.
+2. Selected **WiFi**.
+3. Chose the corporate wireless network.
+4. Clicked **Forget Network**.
+5. Reconnected to the network.
+6. Entered user authentication credentials.
+7. Verified successful connection.
 
 ## Resolution
 
-Wireless profile was recreated and authentication succeeded.
+The wireless profile was reset and the user successfully authenticated to the corporate WiFi network.
 
-## Lessons Learned
+## Documentation Sources
 
-Recreating wireless profiles often resolves authentication issues.
+Windows WiFi Troubleshooting  
+https://learn.microsoft.com/windows-server/networking/
