@@ -1,50 +1,36 @@
-# Ticket 014 – SharePoint Site Permission Issue
+# Ticket 014 SharePoint Permission Issue
 
-Ticket ID: HD-014  
-Priority: Medium  
-Category: Microsoft 365 / SharePoint  
+## Ticket Summary
+
+Ticket ID: 014  
+Category: Access Issue  
+Platform: SharePoint  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-19  
+Assigned Team: IT Helpdesk  
 
-## Issue Summary
+## User Reported Issue
 
-A user reported receiving an access denied error when attempting to open a SharePoint team site.
-
-## Environment
-
-Microsoft 365  
-SharePoint Online  
-Windows 11 workstation  
+The user reported that they could not access a SharePoint site used by their team.
 
 ## Investigation
 
-### Step 1 – Verify SharePoint Site Permissions
+The helpdesk team reviewed SharePoint site permissions and confirmed that the user account was not assigned the appropriate access role.
 
-Site permissions were reviewed in SharePoint administration settings.
+## Click by Click Learning Process
 
-Result  
-User account was not included in the site member group.
-
-### Step 2 – Add User to Site Group
-
-User account was added to the SharePoint site members group.
-
-### Step 3 – Test Access
-
-User attempted to access the SharePoint site again.
-
-Result  
-Access successful.
-
-## Root Cause
-
-User was not assigned to the correct SharePoint permission group.
+1. Opened the **SharePoint Admin Center**.
+2. Navigated to **Active Sites**.
+3. Selected the affected SharePoint site.
+4. Opened **Permissions**.
+5. Reviewed existing user access roles.
+6. Added the user to the appropriate group.
+7. Saved the permission changes.
 
 ## Resolution
 
-User account added to the SharePoint site membership group.
+The user was granted the correct SharePoint site permissions and successfully accessed the site.
 
-## Lessons Learned
+## Documentation Sources
 
-SharePoint site access issues are frequently related to missing group permissions.
+SharePoint Permission Management  
+https://learn.microsoft.com/sharepoint/
