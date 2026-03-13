@@ -1,51 +1,41 @@
-# Ticket 003 – Department Printer Not Responding
-**Ticket ID:** HD-003  
-**Priority:** Medium  
-**Category:** Infrastructure / Printing  
-**Status:** Resolved  
-**Assigned Team:** IT Support  
-**Created Date:** 2026-03-10
+# Ticket 003 Printer Issue
 
-## Issue Summary
-Multiple users reported that the department network printer was not responding. Print jobs were being sent but were not printing.
+## Ticket Summary
 
-## Environment
-Windows Server Print Services  
-Active Directory Domain  
-Windows 11 Workstations  
-Network Printer
+Ticket ID: 003  
+Category: Hardware / Printing  
+Platform: Windows Endpoint  
+Status: Resolved  
+Assigned Team: IT Helpdesk  
+
+## User Reported Issue
+
+The user reported that documents sent to the office printer were not printing. The printer appeared online but print jobs remained stuck in the queue.
 
 ## Investigation
 
-### Step 1 – Verify Network Connectivity
-The printer was tested using a network ping to confirm that the device was reachable.
+The helpdesk team reviewed the user's printer configuration and verified the device connection. The print queue was checked to determine whether jobs were stalled or failing to process.
 
-Result  
-Printer responded to network ping.
+The investigation revealed that the print spooler service had stopped on the user’s workstation.
 
-### Step 2 – Check Printer Queue
-The print queue on the print server was reviewed.
+## Click by Click Learning Process
 
-Result  
-Multiple print jobs were stuck in the queue.
-
-### Step 3 – Restart Print Spooler Service
-The Print Spooler service on the print server was restarted.
-
-### Step 4 – Clear Print Queue
-Stuck print jobs were cleared from the queue.
-
-### Step 5 – Test Printing
-A test page was sent to the printer.
-
-Result  
-Printer successfully printed the test page.
-
-## Root Cause
-The Print Spooler service became unresponsive causing print jobs to remain in the queue.
+1. Opened **Control Panel**.
+2. Selected **Devices and Printers**.
+3. Right clicked the affected printer.
+4. Selected **See what’s printing**.
+5. Checked the print queue for stalled jobs.
+6. Opened **Services**.
+7. Located **Print Spooler**.
+8. Restarted the Print Spooler service.
+9. Cleared the print queue.
+10. Sent a test print.
 
 ## Resolution
-Restarted the Print Spooler service and cleared the print queue.
 
-## Lessons Learned
-When multiple users experience printing issues, the print server or spooler service should be investigated first.
+The print spooler service was restarted and the print queue was cleared. The printer resumed normal operation and the user was able to successfully print documents.
+
+## Documentation Sources
+
+Microsoft Print Spooler Troubleshooting  
+https://learn.microsoft.com/windows-hardware/drivers/print/
