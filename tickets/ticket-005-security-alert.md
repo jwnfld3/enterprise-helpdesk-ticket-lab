@@ -1,47 +1,39 @@
-# Ticket 005 – Suspicious Login Alert
-**Ticket ID:** HD-005  
-**Priority:** High  
-**Category:** Security Incident  
-**Status:** Resolved  
-**Assigned Team:** IT Support  
-**Created Date:** 2026-03-10
+# Ticket 005 Security Alert
 
-## Issue Summary
-A security alert was generated indicating an unusual sign-in attempt for a user account in Microsoft Entra ID.
+## Ticket Summary
 
-## Environment
-Microsoft Entra ID  
-Microsoft 365  
-Windows 11
+Ticket ID: 005  
+Category: Security Incident  
+Platform: Microsoft Defender  
+Status: Resolved  
+Assigned Team: IT Helpdesk  
+
+## User Reported Issue
+
+A security alert was triggered indicating suspicious login activity on a user account.
 
 ## Investigation
 
-### Step 1 – Review Sign-In Logs
-Sign-in logs in Microsoft Entra ID were reviewed.
+The helpdesk team reviewed security alerts in Microsoft Defender and examined authentication logs to determine whether the login attempt was legitimate.
 
-Result  
-Login attempt detected from an unfamiliar geographic location.
+The login attempt originated from an unfamiliar location.
 
-### Step 2 – Verify User Activity
-The user was contacted to confirm whether the login attempt was legitimate.
+## Click by Click Learning Process
 
-Result  
-User confirmed they did not attempt to log in from that location.
-
-### Step 3 – Force Password Reset
-The user's password was reset to prevent unauthorized access.
-
-### Step 4 – Enforce Multi-Factor Authentication
-Multi-Factor Authentication was verified and enforced for the account.
-
-### Step 5 – Monitor Account Activity
-Additional monitoring was enabled to watch for further suspicious login attempts.
-
-## Root Cause
-Unauthorized login attempt detected for the user account.
+1. Opened **Microsoft Defender Portal**.
+2. Navigated to **Incidents & Alerts**.
+3. Selected the suspicious login alert.
+4. Reviewed alert details.
+5. Checked associated user account activity.
+6. Verified sign-in logs in Microsoft Entra.
+7. Reviewed login location and IP address.
+8. Confirmed the login attempt was unauthorized.
 
 ## Resolution
-Password reset performed and Multi-Factor Authentication enforced.
 
-## Lessons Learned
-Monitoring sign-in logs and enforcing Multi-Factor Authentication are essential for detecting and preventing unauthorized account access.
+The user password was reset and active sessions were revoked. The account was secured and monitored for additional suspicious activity.
+
+## Documentation Sources
+
+Microsoft Defender Incident Investigation  
+https://learn.microsoft.com/microsoft-365/security/
