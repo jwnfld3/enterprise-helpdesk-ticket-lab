@@ -1,65 +1,60 @@
-# Ticket 002 – New Employee Account Provisioning
-**Ticket ID:** HD-002  
-**Priority:** Low  
-**Category:** User Account Provisioning  
-**Status:** Resolved  
-**Assigned Team:** IT Support  
-**Created Date:** 2026-03-10
+# Ticket 002 User Onboarding
 
-## Issue Summary
-The Human Resources department submitted a request to create system access for a newly hired employee. The employee required access to Microsoft 365 services and domain resources.
+## Ticket Summary
 
-## Environment
-Active Directory Domain Services  
-Microsoft 365  
-Microsoft Entra ID  
-Windows 11 workstation  
+Ticket ID: 002  
+Category: User Provisioning  
+Platform: Microsoft 365  
+Status: Resolved  
+Assigned Team: IT Helpdesk  
 
-## Request Details
+## User Reported Issue
 
-Department: Finance  
-Requested Access:
-- Domain login
-- Microsoft 365 email
-- SharePoint access
-- Department security group membership
+The Human Resources department submitted a request to onboard a new employee and provide access to Microsoft 365 services including email, Microsoft Teams, and SharePoint.
 
-## Provisioning Process
+The request required the creation of a new user account, assignment of a Microsoft 365 license, and configuration of the user’s authentication settings.
 
-### Step 1 – Create Active Directory User Account
-A new user account was created in Active Directory Users and Computers.
+## Investigation
 
-The account was placed in the appropriate organizational unit for the Finance department.
+The helpdesk team reviewed the onboarding request and confirmed that the employee required access to Microsoft 365 services.
 
-### Step 2 – Assign Initial Password
-A temporary password was created and configured to require password change at first login.
+To complete the onboarding process, a new user account needed to be created in the Microsoft Entra directory and assigned the appropriate Microsoft 365 license.
 
-### Step 3 – Assign Security Groups
-The user was added to the following groups:
+The administrator verified that the employee's information including name, username, department, and job role was provided before creating the account.
 
-Finance Department  
-Microsoft 365 Licensed Users
+## Click by Click Learning Process
 
-### Step 4 – Assign Microsoft 365 License
-The appropriate Microsoft 365 license was assigned in Microsoft Entra ID.
+1. Signed in to the Microsoft 365 Admin Center.
+2. Navigated to **Users**.
+3. Selected **Active Users**.
+4. Clicked **Add a User**.
+5. Entered the employee’s basic information including name and username.
+6. Selected the appropriate domain for the user account.
+7. Generated a temporary password for the new user.
+8. Assigned the appropriate Microsoft 365 license.
+9. Configured optional settings such as department and job title.
+10. Reviewed the account details and selected **Finish Adding**.
 
-This enabled:
-
-Outlook email  
-SharePoint access  
-Microsoft Teams access
-
-### Step 5 – Verify Account Synchronization
-User synchronization between Active Directory and Microsoft Entra ID was confirmed.
-
-### Step 6 – Test Login
-The user successfully authenticated and accessed Microsoft 365 services.
-
-## Root Cause
-Not applicable. This ticket represents a standard onboarding request.
+Administrators can also create new users in the Microsoft Entra Admin Center by navigating to **Entra ID → Users → New User → Create New User**. :contentReference[oaicite:1]{index=1}
 
 ## Resolution
-New employee account successfully created and provisioned with required access.
 
-## Lessons Learned
-Standardized onboarding procedures ensure that new employees receive system access quickly while maintaining proper access control.
+The helpdesk administrator successfully created the new user account and assigned the appropriate Microsoft 365 license.
+
+The following actions were completed:
+
+- new user account created in Microsoft Entra
+- Microsoft 365 license assigned
+- temporary password generated
+- user instructed to change password at first login
+- account access confirmed
+
+The new employee was able to sign in and access Microsoft Outlook, Microsoft Teams, and other Microsoft 365 services.
+
+## Documentation Sources
+
+Microsoft 365 Add User Guide  
+https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/add-users
+
+Microsoft Entra Create Users  
+https://learn.microsoft.com/en-us/entra/fundamentals/how-to-create-delete-users
