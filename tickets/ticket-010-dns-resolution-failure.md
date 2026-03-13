@@ -1,61 +1,53 @@
-# Ticket 010 – DNS Name Resolution Failure
+# Ticket 010 DNS Resolution Failure
 
-Ticket ID: HD-010  
-Priority: High  
-Category: Network Infrastructure  
+## Ticket Summary
+
+Ticket ID: 010  
+Category: Network Issue  
+Platform: Windows Endpoint  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-15  
+Assigned Team: IT Helpdesk  
 
-## Issue Summary
+## User Reported Issue
 
-Multiple users reported being unable to access internal websites using hostnames.
-
-## Environment
-
-Windows Server 2022  
-DNS Server  
-Active Directory Domain Services  
-Windows 11 workstations  
+The user reported that websites and internal services were not loading properly. Web browsers returned DNS related errors when attempting to access external sites.
 
 ## Investigation
 
-### Step 1 – Test DNS Resolution
+The helpdesk team tested the user’s network connectivity and reviewed DNS configuration settings.
 
-DNS resolution tests were performed using command-line tools.
+A DNS lookup test confirmed that the workstation was unable to resolve domain names.
 
-Result  
-Hostname queries failed.
+## Click by Click Learning Process
 
-### Step 2 – Verify DNS Server Configuration
+1. Opened **Command Prompt**.
+2. Ran the following command:
 
-DNS server settings and service status were reviewed.
+   ```
+   ipconfig /all
+   ```
 
-Result  
-DNS service was running but zone record was missing.
+3. Verified DNS server configuration.
+4. Ran the following command:
 
-### Step 3 – Restore DNS Record
+   ```
+   nslookup google.com
+   ```
 
-Missing DNS A record for the internal web server was recreated.
+5. Confirmed that DNS resolution failed.
+6. Cleared the DNS cache using:
 
-Result  
-Hostname resolution restored.
+   ```
+   ipconfig /flushdns
+   ```
 
-### Step 4 – Verify User Access
-
-Users tested access to internal resources.
-
-Result  
-Internal websites loaded successfully.
-
-## Root Cause
-
-Required DNS record for the internal server was missing.
+7. Restarted the network adapter.
 
 ## Resolution
 
-The DNS record was restored in the DNS management console.
+The DNS cache was cleared and the workstation was able to successfully resolve domain names.
 
-## Lessons Learned
+## Documentation Sources
 
-DNS configuration errors can prevent access to internal resources even when network connectivity is functioning properly.
+Windows DNS Troubleshooting  
+https://learn.microsoft.com/windows-server/networking/dns/
