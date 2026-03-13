@@ -1,54 +1,39 @@
-# Ticket 012 – Windows Update Installation Failure
+# Ticket 012 Windows Update Failure
 
-Ticket ID: HD-012  
-Priority: Medium  
-Category: Endpoint Management  
+## Ticket Summary
+
+Ticket ID: 012  
+Category: System Updates  
+Platform: Windows Endpoint  
 Status: Resolved  
-Assigned Team: IT Support  
-Created Date: 2026-03-17  
+Assigned Team: IT Helpdesk  
 
-## Issue Summary
+## User Reported Issue
 
-A workstation failed to install required Windows updates and repeatedly displayed an installation error.
-
-## Environment
-
-Windows 11 workstation  
-Microsoft Intune  
-Windows Update service  
+The user reported that Windows updates were failing to install on their workstation.
 
 ## Investigation
 
-### Step 1 – Review Windows Update Logs
+The helpdesk team reviewed the update status and checked Windows Update error messages.
 
-Update logs were reviewed to identify the failure.
+The investigation revealed that the update service required restarting.
 
-Result  
-Download cache errors detected.
+## Click by Click Learning Process
 
-### Step 2 – Clear Windows Update Cache
-
-The Windows Update cache directory was cleared.
-
-### Step 3 – Restart Update Services
-
-Windows Update services were restarted.
-
-### Step 4 – Retry Update Installation
-
-Updates were reinstalled through Windows Update.
-
-Result  
-Updates installed successfully.
-
-## Root Cause
-
-Corrupted Windows Update cache prevented installation.
+1. Opened **Settings**.
+2. Navigated to **Windows Update**.
+3. Clicked **Update History**.
+4. Reviewed failed updates.
+5. Opened **Services**.
+6. Located **Windows Update Service**.
+7. Restarted the service.
+8. Checked for updates again.
 
 ## Resolution
 
-Windows Update cache was cleared and updates were successfully installed.
+The Windows Update service was restarted and updates successfully installed.
 
-## Lessons Learned
+## Documentation Sources
 
-Clearing the Windows Update cache often resolves repeated update installation failures.
+Windows Update Troubleshooting  
+https://learn.microsoft.com/windows/deployment/update/
