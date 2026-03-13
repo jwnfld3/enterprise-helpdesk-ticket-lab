@@ -1,50 +1,40 @@
-# Ticket 004 – Intune Device Non-Compliant
-**Ticket ID:** HD-004  
-**Priority:** Medium  
-**Category:** Endpoint Management  
-**Status:** Resolved  
-**Assigned Team:** IT Support  
-**Created Date:** 2026-03-10
+# Ticket 004 Intune Compliance Issue
 
-## Issue Summary
-A workstation was flagged as non-compliant in Microsoft Intune due to missing required security updates.
+## Ticket Summary
 
-## Environment
-Microsoft Intune  
-Windows 11  
-Microsoft Entra ID
+Ticket ID: 004  
+Category: Device Compliance  
+Platform: Microsoft Intune  
+Status: Resolved  
+Assigned Team: IT Helpdesk  
+
+## User Reported Issue
+
+The user reported that their device was marked as **Non-Compliant** in Microsoft Intune, preventing access to corporate resources protected by Conditional Access policies.
 
 ## Investigation
 
-### Step 1 – Review Device Compliance Status
-The device compliance report in Microsoft Intune was reviewed.
+The helpdesk team reviewed the device status in Microsoft Intune and identified the compliance policy failure.
 
-Result  
-Device marked as non-compliant.
+The device was missing required security updates.
 
-### Step 2 – Review Compliance Policy
-The compliance policy required the device to have the latest security updates installed.
+## Click by Click Learning Process
 
-### Step 3 – Check Windows Update Status
-The workstation was checked for pending updates.
-
-Result  
-Several security updates were pending installation.
-
-### Step 4 – Install Updates
-Pending updates were installed and the device was restarted.
-
-### Step 5 – Sync Device with Intune
-The device was manually synced with Microsoft Intune.
-
-Result  
-Device compliance status updated to compliant.
-
-## Root Cause
-The workstation had not installed recent Windows security updates required by the compliance policy.
+1. Signed in to **Microsoft Intune Admin Center**.
+2. Navigated to **Devices**.
+3. Selected **All Devices**.
+4. Located the affected device.
+5. Opened **Device Compliance** status.
+6. Reviewed failed compliance policies.
+7. Identified missing security updates.
+8. Triggered **Sync** for the device.
+9. Verified compliance status after updates were installed.
 
 ## Resolution
-Installed pending updates and re-synced device with Microsoft Intune.
 
-## Lessons Learned
-Devices that fall behind on updates can quickly become non-compliant and should be monitored through Intune compliance reports.
+The device was updated and synchronized with Intune. Once the required updates were installed, the device returned to a compliant state.
+
+## Documentation Sources
+
+Microsoft Intune Device Compliance  
+https://learn.microsoft.com/mem/intune/protect/device-compliance-get-started
